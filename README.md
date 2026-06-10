@@ -14,7 +14,7 @@ As a consequence of the primary goal (definition of taxonomy and stable language
 Furthermore, the project favors brevity and conciseness over completeness. Any taxonomy will exhibit grey areas which are expected. Rather than expanding the levels to cover a multitude of “shades of grey”, simplicity is favored. This also holds true to the section of enablers where a complete and unequivocal list is impossible to create. 
 
 ## Scope of usage and committed artifacts
-The resources of this project are intended to be used freely in communication for stakeholders in the context of software-defined vehicles including for commercial use. Derivative work is explicitly permitted and encouraged, e.g. branding in company-specific communication. Change of semantics is strongly dicouraged to maintain the project goal of establishing concise language.
+The resources of this project are intended to be used freely in communication for stakeholders in the context of software-defined vehicles including for commercial use. Derivative work is explicitly permitted and encouraged, e.g. branding in company-specific communication. Change of semantics is strongly discouraged to maintain the project goal of establishing concise language.
 
 In order to keep the artifacts of this project usable for everyone, text assets should remain as text-only resources. Graphics contributions are encouraged to be made in freely editable formats.
 
