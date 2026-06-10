@@ -20,3 +20,23 @@ In order to keep the artifacts of this project usable for everyone, text assets 
 
 ## Contributing
 This is not your typical open-source project. It does not include source-code but rather text-resources and graphics. It relies on finding an acceptable consensus on terminology. If you would like to contribute, please raise a pull-request and expect discussion ;)
+
+
+## Website and slide build
+The project now ships two generated HTML outputs from the same source content:
+- `build/index.html` renders the website/poster view.
+- `build/slide.html` renders a widescreen slide export view that can be printed to PDF.
+
+Build them locally with:
+
+```sh
+make clean && make all
+```
+
+## Template customization
+- Edit the level content in `docs/Lvl0-desc.adoc` to `docs/Lvl5-desc.adoc`.
+- Edit the shared layout in `docs/page-body.adoc`.
+- Edit the shared theme and print styling in `docs/stylesheet.css`.
+- The entry points are `docs/SDV-level.adoc` for the website and `docs/SDV-level-slide.adoc` for the slide export.
+
+A more detailed customization guide is available in `docs/TEMPLATE.md`.

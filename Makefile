@@ -1,5 +1,8 @@
 INPUT=docs/SDV-level.adoc
-OUTPUT=build/index.html
+SLIDE_INPUT=docs/SDV-level-slide.adoc
+OUTPUT_DIR=build
+OUTPUT=$(OUTPUT_DIR)/index.html
+SLIDE_OUTPUT=$(OUTPUT_DIR)/slide.html
 STYLESHEET=stylesheet.css
 
 .PHONY: all build clean
@@ -7,8 +10,10 @@ STYLESHEET=stylesheet.css
 all: build
 
 build:
-	mkdir -p build
-	asciidoctor -a stylesheet=$(STYLESHEET) $(INPUT) -o $(OUTPUT)
-	tar -cf build/github-pages.tar -C build index.html
+mkdir -p $(OUTPUT_DIR)
+asciidoctor -a stylesheet=$(STYLESHEET) $(INPUT) -o $(OUTPUT)
+asciidoctor -a stylesheet=$(STYLESHEET) $(SLIDE_INPUT) -o $(SLIDE_OUTPUT)
+tar -cf $(OUTPUT_DIR)/github-pages.tar -C $(OUTPUT_DIR) .
+
 clean:
-	rm -rf build
+rm -rf $(OUTPUT_DIR)
