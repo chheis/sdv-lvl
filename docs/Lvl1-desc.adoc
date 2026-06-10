@@ -25,7 +25,7 @@ Information and control via connectivity
 * Central connectivity unit
 * Mobile connection
 * Microprocessor-based ECUs
-Infotainment system with display and touch control
+* Infotainment system with display and touch control
 // end::EEarchEnablers[]
 
 // tag::SWarchEnablers[]

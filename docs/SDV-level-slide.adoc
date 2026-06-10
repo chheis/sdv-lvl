@@ -1,6 +1,6 @@
 = Eclipse SDV maturity levels
 :stylesheet: stylesheet.css
-:docrole: website
-:website:
+:docrole: slide
+:slide-export:
 
 include::page-body.adoc[]

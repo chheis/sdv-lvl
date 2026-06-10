@@ -14,9 +14,29 @@ As a consequence of the primary goal (definition of taxonomy and stable language
 Furthermore, the project favors brevity and conciseness over completeness. Any taxonomy will exhibit grey areas which are expected. Rather than expanding the levels to cover a multitude of “shades of grey”, simplicity is favored. This also holds true to the section of enablers where a complete and unequivocal list is impossible to create. 
 
 ## Scope of usage and committed artifacts
-The resources of this project are intended to be used freely in communication for stakeholders in the context of software-defined vehicles including for commercial use. Derivative work is explicitly permitted and encouraged, e.g. branding in company-specific communication. Change of semantics is strongly dicouraged to maintain the project goal of establishing concise language.
+The resources of this project are intended to be used freely in communication for stakeholders in the context of software-defined vehicles including for commercial use. Derivative work is explicitly permitted and encouraged, e.g. branding in company-specific communication. Change of semantics is strongly discouraged to maintain the project goal of establishing concise language.
 
 In order to keep the artifacts of this project usable for everyone, text assets should remain as text-only resources. Graphics contributions are encouraged to be made in freely editable formats.
 
 ## Contributing
 This is not your typical open-source project. It does not include source-code but rather text-resources and graphics. It relies on finding an acceptable consensus on terminology. If you would like to contribute, please raise a pull-request and expect discussion ;)
+
+
+## Website and slide build
+The project now ships two generated HTML outputs from the same source content:
+- `build/index.html` renders the website/poster view.
+- `build/slide.html` renders a widescreen slide export view that can be printed to PDF.
+
+Build them locally with:
+
+```sh
+make clean && make all
+```
+
+## Template customization
+- Edit the level content in `docs/Lvl0-desc.adoc` to `docs/Lvl5-desc.adoc`.
+- Edit the shared layout in `docs/page-body.adoc`.
+- Edit the shared theme and print styling in `docs/stylesheet.css`.
+- The entry points are `docs/SDV-level.adoc` for the website and `docs/SDV-level-slide.adoc` for the slide export.
+
+A more detailed customization guide is available in `docs/TEMPLATE.md`.
